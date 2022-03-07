@@ -7,7 +7,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Привет от приложения Flask"
+    result = """<h1>Hello world</h1>
+    <p> Пример запуска приложения в Heroku</P>
+    """
+    return result
 
 
 if __name__ == '__main__':
